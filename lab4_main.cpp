@@ -1,6 +1,5 @@
 #include <iostream>
 #include <cmath> // maths library connection 
-
 using namespace std;
 // task start
 
@@ -55,24 +54,23 @@ int main() { // menu for moving between tasks
 void RingS() {
     CheckRadius();
 }
-
 bool CheckRadius() {
-    cout << " proc19 " << endl;
+    cout << "   ***proc19*** " << endl;
     double or1, ir1; // declaration of the variable 
     double or2, ir2;
     double or3, ir3;
-    cout << "Enter the outer and inner radius of the first ring: ";
+    cout << " Enter the outer and inner radius of the first ring: ";
     cin >> or1 >> ir1;// input number
-    cout << "Enter the outer and inner radius of the second ring: ";
+    cout << " Enter the outer and inner radius of the second ring: ";
     cin >> or2 >> ir2;// input number
-    cout << "Enter the outer and inner radius of the third ring: ";
+    cout << " Enter the outer and inner radius of the third ring: ";
     cin >> or3 >> ir3;// input number
     if (or1, ir1, or2, ir2, or3, ir3 > 0 && or1 > ir1 && or2 > ir2 && or3 > ir3) {
     // condition if the number entered corretly
         Calculation(or1, ir1, or2, ir2, or3, ir3);
     }
     else {
-        cout << "Wrong! ";
+        cout << " Wrong! ";
         return -1;
     }// error notification
     return 0;
@@ -83,13 +81,12 @@ void Calculation(double or1, double ir1, double or2, double ir2, double or3, dou
     double ar2 = RingS1(or2, ir2);
     double ar3 = RingS1(or3, ir3);
     //output results
-    cout << "Area of the first ring: " << ar1 << endl;
-    cout << "Area of the second ring: " << ar2 << endl;
-    cout << "Area of the third ring: " << ar3 << endl;
+    cout << " Area of the first ring: " << ar1 << endl;
+    cout << " Area of the second ring: " << ar2 << endl;
+    cout << " Area of the third ring: " << ar3 << endl;
 
     double RingS(double R1, double R2);
 }
-
 double RingS1(double& OR, double& IR) {
     //calculation area
     const double pi = 3.14;
@@ -103,7 +100,6 @@ void Boolean29()
 {
     Solving();
 }
-
 bool CheckInput(int x, int y, int x1, int x2, int y1, int y2)
 { 
     // condition if the number entered corretly
@@ -132,7 +128,6 @@ bool CheckInput(int x, int y, int x1, int x2, int y1, int y2)
         return false;
     }
 }
-
 bool Calculation(int x, int y, int x1, int x2, int y1, int y2)
 {
     ////calculation task2
@@ -142,7 +137,7 @@ bool Calculation(int x, int y, int x1, int x2, int y1, int y2)
 void Solving()
 {
     //output results
-    cout << " boolean29 " << endl;
+    cout << "   ***boolean29*** " << endl;
     int x, y, x1, x2, y1, y2; // declaration of the variable 
     cout << " Enter x, y: ";
     cin >> x >> y;//input number
@@ -158,7 +153,7 @@ void Solving()
     }
     else {
         // error notification
-        cout << "Wrong!";
+        cout << " Wrong!";
     }
 }
 //task3
@@ -168,6 +163,7 @@ void integer11()
 }
 int InputThreeIntegerNumber()
 {
+    cout << "   ***integer11*** " << endl;
     int three;//declaration of the variable 
     cout << " Enter a three-digit number : ";
     cin >> three; //input number
@@ -182,7 +178,6 @@ int InputThreeIntegerNumber()
         return -1;
     }
 }
-
 void Calculation(int three) {
     int a = 0;
     int b = 0;
