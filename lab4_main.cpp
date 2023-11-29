@@ -130,7 +130,7 @@ bool CheckInput(int x, int y, int x1, int x2, int y1, int y2)
 }
 bool Calculation(int x, int y, int x1, int x2, int y1, int y2)
 {
-    ////calculation task2
+    //calculation task2
     return (x >= x1 && y <= y1) && (x <= x2 && y >= y2);
 }
 
